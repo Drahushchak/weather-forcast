@@ -1,0 +1,18 @@
+.weatherCard{
+    padding: 0.8em 0;
+    width: 13%;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.15);
+    font-size: 1.125em;
+    text-align: center;
+}
+
+@media screen and (min-width: 880px) {
+    .weatherCard {
+      width: 6.05em;
+    }
+  }
+
+.weatherCard > .weatherIcon {
+    padding: 1em
+}

@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css'
+import { Date } from './components/Date'
+import { Location } from './components/Location'
+import { TodayWeather } from './components/TodayWeather'
+import { ThisWeekWeather } from './components/ThisWeekWeather'
+import { Container } from 'react-bootstrap'
+import React from 'react'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Location/>
+      <Date/>
+      <TodayWeather/>
+      <ThisWeekWeather/>
+    </Container>
   );
 }
 
