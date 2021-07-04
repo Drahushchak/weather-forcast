@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './style.css'
+import WeatherIcon from 'components/WeatherIcon'
 
 function index(props) {
     return (
         <div className='weatherCard'>
             <div>{props.header}</div>
-            {props.icon}
+            <WeatherIcon type={props.icon}/>
             <div>{props.footer}</div>
         </div>
     )
@@ -14,7 +15,7 @@ function index(props) {
 
 index.propTypes = {
     header: PropTypes.string,
-    icon: PropTypes.element,
+    icon: PropTypes.string,
     footer: PropTypes.string
 }
 

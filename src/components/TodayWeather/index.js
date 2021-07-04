@@ -43,7 +43,50 @@ export function TodayWeather() {
     }
 
     function getHourlyTemperature(){
-        return []
+        return [
+            {
+                id: 1,
+                header: '3am',
+                icon: 'cloudy',
+                footer: '14°'
+            },
+            {
+                id: 2,
+                header: '6am',
+                icon: 'cloudy',
+                footer: '16°'
+            },
+            {
+                id: 3,
+                header: '9am',
+                icon: 'cloudy',
+                footer: '17°'
+            },
+            {
+                id: 4,
+                header: '12am',
+                icon: 'cloudy',
+                footer: '19°'
+            },
+            {
+                id: 5,
+                header: '3pm',
+                icon: 'sunny',
+                footer: '21°'
+            },
+            {
+                id: 6,
+                header: '6pm',
+                icon: 'sunny',
+                footer: '20°'
+            },
+            {
+                id: 7,
+                header: '9pm',
+                icon: 'cloudy',
+                footer: '18°'
+            }
+        ]
     }
 
     const [stats, ] = useState(getTodayStats);
@@ -66,11 +109,16 @@ export function TodayWeather() {
             <div className='todayHourly'>
                 <h2>Today&apos;s weather</h2>
                 <div className='content'>
-                    <WeatherCard 
-                        header='3am'
-                        icon={<WeatherIcon type='cloudy'/>}
-                        footer='14°'
-                    />
+                    {
+                        hourlyTemperatItems.map(item => {
+                            return <WeatherCard 
+                                key={item.id}
+                                header={item.header}
+                                icon={item.icon}
+                                footer={item.footer}
+                            />
+                        })
+                    }
                 </div>
             </div>
         </div>

@@ -1,8 +1,8 @@
 .detailItem .value {
-    font-size: 32px;
+    font-size: 0.95em;
 }
 
 .detailItem .detail {
-    font-size: 22px;
+    font-size: 0.95em;
     color: rgb(184, 184, 184);
 }
