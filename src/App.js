@@ -10,6 +10,7 @@ import React from 'react'
 function App() {
   return (
     <Container>
+      This is only a test
       <Location/>
       <Date/>
       <TodayWeather/>
