@@ -5,6 +5,7 @@ import {ReactComponent as Stormy} from './icons/stormy.svg';
 import {ReactComponent as Rainy} from './icons/rainy.svg';
 import {ReactComponent as Snowy} from './icons/snowy.svg';
 import {ReactComponent as Sunny} from './icons/sunny.svg';
+import {ReactComponent as Windy} from './icons/windy.svg';
 // import {ReactComponent as Windy} from './icons/windy.svg';
 import './style.css'
 
@@ -17,7 +18,7 @@ function WeatherIcon(props) {
             case 'rainy':   return <Rainy/>
             case 'snowy':   return <Snowy/>
             case 'sunny':   return <Sunny/>
-            // case 'windy':  return <Windy/>
+            case 'windy':   return <Windy/>
             default: return null
         }
     }

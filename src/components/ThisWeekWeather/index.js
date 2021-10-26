@@ -16,7 +16,7 @@ export function ThisWeekWeather() {
                     name: 'Tue',
                     date: '30/7'
                 },
-                weather: 'cloudy',
+                weather: 'windy',
                 temperature: {
                     min: '10°',
                     max: '21°'
@@ -30,7 +30,7 @@ export function ThisWeekWeather() {
                     name: 'Tue',
                     date: '30/7'
                 },
-                weather: 'cloudy',
+                weather: 'snowy',
                 temperature: {
                     min: '10°',
                     max: '21°'
@@ -44,7 +44,7 @@ export function ThisWeekWeather() {
                     name: 'Tue',
                     date: '30/7'
                 },
-                weather: 'cloudy',
+                weather: 'stormy',
                 temperature: {
                     min: '10°',
                     max: '21°'
@@ -58,7 +58,7 @@ export function ThisWeekWeather() {
                     name: 'Tue',
                     date: '30/7'
                 },
-                weather: 'cloudy',
+                weather: 'rainy',
                 temperature: {
                     min: '10°',
                     max: '21°'
@@ -72,7 +72,7 @@ export function ThisWeekWeather() {
                     name: 'Tue',
                     date: '30/7'
                 },
-                weather: 'cloudy',
+                weather: 'sunny',
                 temperature: {
                     min: '10°',
                     max: '21°'
